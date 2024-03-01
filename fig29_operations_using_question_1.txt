@@ -1,0 +1,171 @@
+Q 8.31 A (operations READ, WRITE, LOAD, STORE, ADD, BRANCH, BRANCH_NEG, HALT)
+       *** Welcome to Simpletron! ***
+       *** Please enter your program one instruction ***
+       *** (or data word) at a time into the input ***
+       *** text field. I will display the location ***
+       *** number and a question mark (?). You then ***
+       *** type the word for that location. Enter ***
+       *** -99999 to stop entering your program ***
+       
+00 ? +1009
+01 ? +2009
+02 ? +4106
+03 ? +3008
+04 ? +2108
+05 ? +4000
+06 ? +1108
+07 ? +4300
+08 ? +0000
+09 ? +0000
+10 ? -99999
+*** Program loading completed ***
+*** Program execution begins ***
+Enter an integer: 5
+Enter an integer: 5
+Enter an integer: 3
+Enter an integer: 7
+Enter an integer: -2
+Contents of 08 is 20
+*** Simpletron execution terminated ***
+REGISTERS:
+Accumulator:            -0002
+InstructionCounter:        08
+InstructionRegister:    +4300
+OperationCode:             43
+Operand:                   00
+
+
+
+Q 8.31 B (operations READ, WRITE, LOAD, STORE, ADD, DIVIDE, BRANCH,  HALT)
+       *** Welcome to Simpletron! ***
+       *** Please enter your program one instruction ***
+       *** (or data word) at a time into the input ***
+       *** text field. I will display the location ***
+       *** number and a question mark (?). You then ***
+       *** type the word for that location. Enter ***
+       *** -99999 to stop entering your program ***
+       
+00 ? +2018
+01 ? +3121
+02 ? +4211
+03 ? +2018
+04 ? +3019
+05 ? +2118
+06 ? +1017
+07 ? +2016
+08 ? +3017
+09 ? +2116
+10 ? +4000
+11 ? +2016
+12 ? +3318
+13 ? +2120
+14 ? +1120
+15 ? +4300
+16 ? +0000
+17 ? +0000
+18 ? +0000
+19 ? +0001
+20 ? +0000
+21 ? +0007
+22 ? -99999
+*** Program loading completed ***
+*** Program execution begins ***
+Enter an integer: 10
+Enter an integer: 20
+Enter an integer: 30
+Enter an integer: 10
+Enter an integer: -7
+Enter an integer: -14
+Enter an integer: 28
+Contents of 20 is 11
+*** Simpletron execution terminated ***
+REGISTERS:
+Accumulator:            +0011
+InstructionCounter:        16
+InstructionRegister:    +4300
+OperationCode:             43
+Operand:                   00
+
+
+
+
+
+Q 8.31 C (Operatios READ, WRITE, LOAD, STORE, SUBTRACT, BRANCH, BRANCH_NEG, BRANCH_ZERO HALT)
+       *** Welcome to Simpletron! ***
+       *** Please enter your program one instruction ***
+       *** (or data word) at a time into the input ***
+       *** text field. I will display the location ***
+       *** number and a question mark (?). You then ***
+       *** type the word for that location. Enter ***
+       *** -99999 to stop entering your program ***
+       
+00 ? +1017
+01 ? +2018
+02 ? +3117
+03 ? +4215
+04 ? +2018
+05 ? +3021
+06 ? +2118
+07 ? +1019
+08 ? +2020
+09 ? +3119
+10 ? +4112
+11 ? +4001
+12 ? +2019
+13 ? +2120
+14 ? +4001
+15 ? +1120
+16 ? +4300
+17 ? +0000
+18 ? +0000
+19 ? +0000
+20 ? +0000
+21 ? +0001
+22 ? -99999
+*** Program loading completed ***
+*** Program execution begins ***
+Enter an integer: 5
+Enter an integer: 10
+Enter an integer: 16
+Enter an integer: 7
+Enter an integer: 6
+Enter an integer: 26
+Contents of 20 is 26
+*** Simpletron execution terminated ***
+REGISTERS:
+Accumulator:            +0000
+InstructionCounter:        17
+InstructionRegister:    +4300
+OperationCode:             43
+Operand:                   00
+
+
+
+
+Example for operation MULTIPLY
+00 ? +1010
+01 ? +2010
+02 ? +2110
+03 ? +1011
+04 ? +2011
+05 ? +2111
+06 ? +3210
+07 ? +2112
+08 ? +1112
+09 ? +4300
+10 ? +0000
+11 ? +0000
+12 ? +0000
+13 ? -99999
+*** Program loading completed ***
+*** Program execution begins ***
+Enter an integer: 3
+Enter an integer: 5
+Contents of 12 is 15
+*** Simpletron execution terminated ***
+REGISTERS:
+Accumulator:            +0015
+InstructionCounter:        10
+InstructionRegister:    +4300
+OperationCode:             43
+Operand:                   00
