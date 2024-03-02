@@ -25,6 +25,7 @@ class Simulator:
        self.printInstructions()
        self.loadInstructions()
        self.execute()
+       self.dump()
 
    def initializeRegisters(self):
        pass
@@ -43,9 +44,13 @@ class Simulator:
 
    def loadInstructions(self):
        counter = 0
-       while counter < 100:
-           instruction = int(input(f"{counter:02d} ? "))
-           if instruction == -99999:
+       instructions_file = open('input_instructions.txt', 'r')
+       instructions = instructions_file.readlines()
+       #while counter < 100:
+       for instruction in instructions:
+           #instruction = int(input(f"{counter:02d} ? "))
+           instruction = int(instruction)
+           if (instruction == -99999 or counter>=100):
                break
            if self.validate(instruction):
                self.memory[counter] = instruction
@@ -67,6 +72,9 @@ class Simulator:
 
    def execute(self):
        print("*** Program execution begins ***")
+       input_file = open('input_file.txt', 'r')
+       input_lines = input_file.readlines()
+       line_no=0
        while self.instructionCounter < len(self.memory):
            self.instructionRegister = self.memory[self.instructionCounter]
            self.operationCode = self.instructionRegister // 100
@@ -74,8 +82,9 @@ class Simulator:
 
            self.instructionCounter += 1
            if self.operationCode == self.READ:
-               print("Enter an integer: ", end='')
-               self.memory[self.operand] = int(input())
+               #print("Enter an integer: ", end='')
+               self.memory[self.operand] = int(input_lines[line_no])
+               line_no += 1
            elif self.operationCode == self.WRITE:
                print(f"Contents of {self.operand:02d} is {self.memory[self.operand]}")
            elif self.operationCode == self.LOAD:
@@ -122,10 +131,23 @@ class Simulator:
        print(f"{'OperationCode:':<27}{self.operationCode:02d}")
        print(f"{'Operand:':<27}{self.operand:02d}")
 
+   def dump(self):
+       self.display_registers()
+       print("\nMEMORY:")
+       print(" ", end='')
+       for k in range(10):
+           print(f"{k:7d}", end='')
+       print()
+
+       for k in range(10):
+           print(f"{k * 10:02d}", end='')
+           for i in range(10):
+               print(f" {self.memory[k * 10 + i]:+05d}", end='')
+           print()
 
 
-simulator = Simulator()
-simulator.run_simulator()
+#simulator = Simulator()
+#simulator.run_simulator()
 
 class SimulatorTest:
    def main(self, args):
