@@ -8,6 +8,7 @@ class Simulator:
    MULTIPLY = 32
    DIVIDE = 33
    REMAINDER = 34
+   EXPONENT = 35 
    BRANCH = 40
    BRANCH_NEG = 41
    BRANCH_ZERO = 42
@@ -113,7 +114,11 @@ class Simulator:
                if self.memory[self.operand] == 0:
                    print("*** Fatal error. Attempt to divide by zero. ***")
                    return
-               self.accumulator %= self.memory[self.operand]    
+               self.accumulator %= self.memory[self.operand]  
+           elif self.operationCode == self.EXPONENT:
+               self.accumulator **= self.memory[self.operand]
+               if self.test_overflow():
+                   return  
            elif self.operationCode == self.BRANCH:
                self.instructionCounter = self.operand
            elif self.operationCode == self.BRANCH_NEG:
