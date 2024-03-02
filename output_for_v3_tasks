@@ -1,0 +1,159 @@
+
+       *** Welcome to Simpletron! ***
+       *** Please enter your program one instruction ***
+       *** (or data word) at a time into the input ***
+       *** text field. I will display the location ***
+       *** number and a question mark (?). You then ***
+       *** type the word for that location. Enter ***
+       *** -99999 to stop entering your program ***
+       
+*** Program loading completed ***
+*** Program execution begins ***
+Contents of 12 is 125
+*** Simpletron execution terminated ***
+REGISTERS:
+Accumulator:            +0125
+InstructionCounter:        10
+InstructionRegister:    +4300
+OperationCode:             43
+Operand:                   00
+
+INSTRUCTIONS:
++1010
+
++2010
+
++2110
+
++1011
+
++2011
+
++2111
+
++3510
+
++2112
+
++1112
+
++4300
+
++0000
+
++0000
+
++0000
+
+-99999
+
+
+INPUTS:
+3
+
+5
+
+MEMORY:
+       0      1      2      3      4      5      6      7      8      9
+00 +1010 +2010 +2110 +1011 +2011 +2111 +3510 +2112 +1112 +4300
+10 +0003 +0005 +0125 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+20 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+30 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+40 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+50 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+60 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+70 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+80 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+90 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+
+
+
+
+
+
+
+
+====================
+
+
+
+
+
+
+
+
+
+
+       *** Welcome to Simpletron! ***
+       *** Please enter your program one instruction ***
+       *** (or data word) at a time into the input ***
+       *** text field. I will display the location ***
+       *** number and a question mark (?). You then ***
+       *** type the word for that location. Enter ***
+       *** -99999 to stop entering your program ***
+       
+*** Program loading completed ***
+*** Program execution begins ***
+Contents of 12 is 4
+*** Simpletron execution terminated ***
+REGISTERS:
+Accumulator:            +0004
+InstructionCounter:        10
+InstructionRegister:    +4300
+OperationCode:             43
+Operand:                   00
+
+INSTRUCTIONS:
++1010
+
++2010
+
++2110
+
++1011
+
++2011
+
++2111
+
++3410
+
++2112
+
++1112
+
++4300
+
++0000
+
++0000
+
++0000
+
+-99999
+
+
+INPUTS:
+7
+
+46
+
+MEMORY:
+       0      1      2      3      4      5      6      7      8      9
+00 +1010 +2010 +2110 +1011 +2011 +2111 +3410 +2112 +1112 +4300
+10 +0007 +0046 +0004 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+20 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+30 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+40 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+50 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+60 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+70 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+80 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+90 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+
+
+
+
+
+
+
