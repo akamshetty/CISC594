@@ -9,4 +9,6 @@ input_instructions.txt - add instruction per line and -99999 to end loading inst
 input_file.txt - add input per line for READ instructions only
 2. Display Memory dump after completion of program
 
-
+Version3:
+1. Add functions for 8.33 b/c/e
+2. results for exponent ane remainder functions
